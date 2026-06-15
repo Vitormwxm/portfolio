@@ -1,0 +1,157 @@
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+/* Logo */
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.header-logo a {
+  display: flex;
+}
+
+.header-logo img {
+  width: 40px;
+  height: 40px;
+}
+
+.header-logo p {
+  font-family: "Fire Sans", "Segoe UI", sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  margin: 0;
+}
+
+/* Menu */
+.sidebar-menu {
+  width: 100%;
+}
+
+.menu-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* Lista escondida por padrão no mobile */
+.menu-list {
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+}
+
+/* Lista aberta */
+.menu-list.active {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 1rem;
+  gap: 0.5rem;
+}
+
+.menu-list li {
+  width: 100%;
+}
+
+.menu-list li a {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 1.25rem;
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.75rem;
+  color: #1e293b;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.menu-list li a:hover {
+  background-color: #2877ab;
+  color: white;
+  transform: translateX(4px);
+}
+
+/* Ícone hamburguer */
+#menu-bar {
+  width: 40px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bar {
+  width: 100%;
+  height: 6px;
+  background-color: #2877ab;
+  border-radius: 999px;
+  transition: 0.3s ease;
+}
+
+#bar2 {
+  width: 70%;
+  margin-left: auto;
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .menu-list.active {
+    flex-direction: row;
+    width: 400px;
+    justify-content: space-between;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .sidebar-menu {
+    width: auto;
+  }
+
+  .menu-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    margin: 0;
+  }
+
+  .menu-list li {
+    width: auto;
+  }
+
+  .menu-list li a {
+    width: auto;
+    padding: 0;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    color: inherit;
+  }
+
+  .menu-list li a:hover {
+    transform: none;
+  }
+}
