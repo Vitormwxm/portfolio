@@ -37,6 +37,14 @@ body {
   background: #fff;
   color: #000;
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
+}
+
+html {
+    overflow-x: hidden;
+    width: 100%;
 }
 
 ol, ul {
@@ -86,7 +94,10 @@ input, button, textarea, select {
 }
 
 .site-container {
+    position: relative;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    z-index: 2;
+  
 }

@@ -1,0 +1,142 @@
+.hero {
+    margin-top: 4rem;
+}
+
+.fundo-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;       
+    height: 100vh;      
+    overflow: hidden;   
+    z-index: 1;         
+    pointer-events: none; 
+}
+
+.text-apresentation {
+  position: relative;
+  margin-left: 30px;
+  font-size: 2.5rem;
+  line-height: 1.1;
+  font-size: clamp(1.8rem, 8vw, 2.8rem);
+  color: #2877AB;
+}
+
+.text-apresentation .black {
+  color: #252D33;
+}
+
+.text-apresentation::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 0.2em;
+
+  width: 0.4rem;
+  height: 2rem;
+
+  background-color: #2877AB;
+}
+
+.blob-fundo {
+    position: absolute;
+    top: clamp(35vh, 40vh, 55vh);     
+    right: -15%;    
+    width: clamp(280px, 90vw, 500px);     
+    height: clamp(140px, 45vw, 250px);    
+    background-color: #5fa8df; 
+    
+    border-radius: 50%;
+    transform: rotate(25deg);
+
+    z-index: 1; 
+}
+
+.hero-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    
+    max-width: clamp(280px, 90vw, 450px)
+}
+
+.skills h2{
+    margin: 60px 0px 60px 0px;
+    width: max-content;
+    position: relative;
+}
+
+.skills h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+
+    width: 75%;
+    height: 3px;
+    
+    background-color: #2877ab;
+    transition: width 0.3s ease;
+  }
+
+.skills-list {
+   
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+    justify-content: center; 
+    align-content: center;
+    
+    justify-items: center;
+    align-items: center;
+    
+    gap: 10px; 
+    margin-top: 20px;
+}
+
+.skills-footer {
+    width: 100%;
+    background-color: #2877ab; /* A cor cinza escuro/preto do seu layout */
+    padding: 20px 0;           /* Espaçamento em cima e embaixo da faixa */
+    margin-top: 40px;          /* Afasta o footer da seção de skills */
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;      
+    justify-content: center;
+    gap: 12px;                 
+    
+    
+    font-size: clamp(1.2rem, 5vw, 2rem); 
+    font-weight: bold;
+    color: #ffffff;            
+    letter-spacing: 1px;       
+}
+
+
+.footer-content .java-logo {
+    height: 1.2em;             
+    width: auto;               
+    display: inline-block;
+}
+
+.java-logo {
+    height: 1.2em;
+    width: auto;
+    display: inline-block;
+
+    /* O TRUQUE PARA DEIXAR BRANCO: */
+    filter: brightness(0) invert(1);
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+
+}
