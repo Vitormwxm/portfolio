@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="css/general/reset.css" />
     <link rel="stylesheet" href="css/components/header/header.css" />
     <link rel="stylesheet" href="css/components/hero/hero.css" />
+    <link rel="stylesheet" href="css/components/portfolio/portfolio.css" />
   </head>
   <body>
     <div class="fundo-wrapper">
       <div class="blob-fundo"></div>
-  </div>>
+    </div>
 
     <div class="site-container">
       <div class="header-container">
@@ -20,7 +21,6 @@
             <a href="#">
               <img src="assets/img/logo.svg" alt="Logo do Portfólio" />
             </a>
-
             <p>Vitor</p>
           </div>
 
@@ -43,63 +43,167 @@
       </div>
 
       <section class="hero">
-          <div class="line"></div>
+        <div class="line"></div>
 
-          <div class="text">  
-            <h1 class="text-apresentation">
-              <span>MEU NOME</span><br>
-              É <span class="black"> VITOR</span><br>
-              <span>DESENVOLVEDOR </span><br>
-              <span>FULLSTACK</span>
-            </h1>
+        <div class="text">
+          <h1 class="text-apresentation">
+            <span>MEU NOME</span><br />
+            É <span class="black">VITOR</span><br />
+            <span>DESENVOLVEDOR</span><br />
+            <span>FULLSTACK</span>
+          </h1>
+        </div>
+
+        <div class="hero-card">
+          <div class="card-content">
+            <img src="assets/img/card-img.svg" alt="Ilustração do card hero" />
           </div>
-          
-          <div class="hero-card">
-            <div class="card-content">
-              <img src="assets/img/card-img.svg" alt="">
+        </div>
+
+        <div class="skills">
+          <div>
+            <h2>HABILIDADES</h2>
+          </div>
+
+          <div class="skills-list">
+            <div class="skill-item">
+              <img src="assets/img/languagues/html.svg" alt="HTML" />
             </div>
 
-          </div>
+            <div class="skill-item">
+              <img src="assets/img/languagues/css.svg" alt="CSS" />
+            </div>
 
-          <div class="skills">
-              <div><h2>HABILIDADES</h2></div>
+            <div class="skill-item">
+              <img src="assets/img/languagues/Javascript-logo.svg" alt="JavaScript" />
+            </div>
 
-              <div class="skills-list">
-                <div class="skill-item">
-                  <img src="assets/img/languagues/html.svg" alt="">
-                </div>
+            <div class="skill-item">
+              <img src="assets/img/languagues/github.svg" alt="GitHub" />
+            </div>
 
-                <div class="skill-item">
-                  <img src="assets/img/languagues/css.svg" alt="">
-                </div>
+            <div class="skill-item">
+              <img src="assets/img/languagues/figma.svg" alt="Figma" />
+            </div>
 
-                <div class="skill-item">
-                  <img src="assets/img/languagues/Javascript-logo.svg" alt="">
-                </div>
-
-                <div class="skill-item">
-                  <img src="assets/img/languagues/github.svg" alt="">
-                </div>
-
-                <div class="skill-item">
-                  <img src="assets/img/languagues/figma.svg" alt="">
-                </div>
-
-                <div class="skill-item">
-                  <img src="assets/img/languagues/java.svg" alt="">
-                </div>
-              </div>
+            <div class="skill-item">
+              <img src="assets/img/languagues/java.svg" alt="Java" />
             </div>
           </div>
+        </div>
       </section>
 
-      <footer class="skills-footer">
+      <section class="skills-footer">
         <div class="footer-content">
           <span>DESENVOLVEDOR</span>
-          <img src="assets/img/languagues/java.svg" background-color="white" alt="Java Logo" class="java-logo">
+          <img src="assets/img/languagues/java.svg" alt="Java Logo" class="java-logo" />
           <span>FULLSTACK</span>
         </div>
-      </footer>
+      </section>
+
+      <section class="portfolio">
+        <div>
+          <h2>PORTFÓLIO</h2>
+          <p>Selecione um trabalho</p>
+        </div>
+        
+        <div class="portfolio-grid">
+          <div class="card">
+            <span>?</span>
+            <p>Em Breve</p>
+          </div>
+
+          <div class="card">
+            <span>?</span>
+            <p>Em Breve</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="about">
+        <div class="about-header">
+          <svg class="about-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="iconGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" style="stop-color:#28A7AB;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#2877AB;stop-opacity:1" />
+              </linearGradient>
+            </defs>
+            <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" fill="url(#iconGradient)"/>
+          </svg>
+          <h2>Sobre mim</h2>
+        </div>
+
+        <p class="about-text">
+          Cursando <span class="highlight">Análise e Desenvolvimento de Sistemas</span> com conhecimentos em <span class="highlight">Programação Orientada a Objetos</span> utilizando <span class="highlight">Java</span>. Sólidos conhecimentos em <span class="highlight">Herança</span>, <span class="highlight">Polimorfismo</span>, <span class="highlight">Encapsulamento</span>, <span class="highlight">Interface</span>, manipulação de data e hora, <span class="highlight">enumerações</span>, construtores, tratamento de exceção e interfaces. Além de possuir conhecimentos em tecnologias de desenvolvimento web, como <span class="highlight">Javascript</span>, <span class="highlight">HTML</span>, <span class="highlight">CSS</span> e <span class="highlight">Bootstrap</span>, contribuindo para uma maior interação com DEVs do Front-end.
+        </p>
+      </section>
+
+      <section class="education">
+        <div class="education-header">
+          <svg class="education-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="educationGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" style="stop-color:#28A7AB;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#2877AB;stop-opacity:1" />
+              </linearGradient>
+            </defs>
+            <path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6.18L23 9 12 3zm6.82 6L12 7.82 5.18 9 12 11.18 18.82 9z" fill="url(#educationGradient)"/>
+          </svg>
+          <h2>Formação Acadêmica</h2>
+        </div>
+
+        <p class="education-text">
+          Análise e Desenvolvimento de Sistemas - Descomplica
+        </p>
+      </section>
+
+      <section class="courses">
+        <div class="courses-header">
+          <svg class="courses-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="coursesGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" style="stop-color:#28A7AB;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#2877AB;stop-opacity:1" />
+              </linearGradient>
+            </defs>
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z" fill="url(#coursesGradient)"/>
+          </svg>
+          <h2>Cursos Intensivos</h2>
+        </div>
+
+        <div class="courses-list">
+          <div class="course-item">
+            <span class="course-name">Programmer - Descomplica</span>
+            <span class="course-hours">160h</span>
+          </div>
+
+          <div class="course-item">
+            <span class="course-name">Basic FrontEnd - Descomplica</span>
+            <span class="course-hours">240h</span>
+          </div>
+
+          <div class="course-item">
+            <span class="course-name">FrontEnd Developer - Descomplica</span>
+            <span class="course-hours">240h</span>
+          </div>
+
+          <div class="course-item">
+            <span class="course-name">BackEnd Developer - Descomplica</span>
+            <span class="course-hours">160h</span>
+          </div>
+
+          <div class="course-item">
+            <span class="course-name">Object-Oriented Developer - Descomplica</span>
+            <span class="course-hours">240h</span>
+          </div>
+
+          <div class="course-item">
+            <span class="course-name">Full-stack-developer - Descomplica</span>
+            <span class="course-hours">160h</span>
+          </div>
+        </div>
+      </section>
     </div>
 
     <script src="javascripts/menu/menu.js"></script>

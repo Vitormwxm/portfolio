@@ -58,8 +58,8 @@
     align-items: center;
 
     width: 100%;
-    
-    max-width: clamp(280px, 90vw, 450px)
+    max-width: clamp(280px, 90vw, 450px);
+    margin: 40px 0;
 }
 
 .skills h2{
@@ -79,7 +79,7 @@
     
     background-color: #2877ab;
     transition: width 0.3s ease;
-  }
+}
 
 .skills-list {
    
