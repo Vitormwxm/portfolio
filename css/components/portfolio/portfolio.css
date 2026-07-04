@@ -1,3 +1,10 @@
+.dark-section-wrapper {
+  background-color: #000000;
+  width: 100%;
+  position: relative;
+  z-index: 0;
+}
+
 .portfolio {
   display: flex;
   flex-direction: column;
@@ -23,10 +30,9 @@
 .portfolio .portfolio-grid {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 18px;
   place-items: center;
-  padding: 0 30px;
 }
 
 .card {
@@ -38,7 +44,7 @@
   aspect-ratio: 1 / 1;
   width: 100%;
   min-width: 140px;
-  max-width: 300px;
+  max-width: 500px;
   
   background-color: #191919;
   color: #ffffff;
@@ -60,11 +66,24 @@
   margin: 0;
 }
 
-/* ABOUT SECTION */
+/* CURRICULO SECTION */
+.curriculo-grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.curriculo-title {
+  display: none;
+}
+
+.curriculo-content {
+  display: flex;
+  flex-direction: column;
+}
+
 .about {
   display: flex;
   flex-direction: column;
-  width: 100%;
   padding: 60px 30px;
   background-color: #000000;
 }
@@ -106,7 +125,6 @@
 .education {
   display: flex;
   flex-direction: column;
-  width: 100%;
   padding: 60px 30px;
   background-color: #000000;
 }
@@ -143,7 +161,6 @@
 .courses {
   display: flex;
   flex-direction: column;
-  width: 100%;
   padding: 60px 30px;
   background-color: #000000;
 }
@@ -195,7 +212,6 @@
 .download-section {
   display: flex;
   justify-content: flex-start;
-  width: 100%;
   padding: 60px 30px;
   background-color: #000000;
 }
@@ -212,8 +228,8 @@
   color: #1E6D96;
   text-decoration: none;
   
-  background: linear-gradient(to bottom, #289AAB, #2877AB);
-  border-radius: 4px;
+  background-color: #289AAB;
+  border-radius: 0px;
   
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -221,4 +237,63 @@
 .btn-download:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 16px rgba(40, 122, 171, 0.3);
+}
+
+/* Tablet e Mobile */
+@media (max-width: 768px) {
+  .portfolio .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card-desktop-only {
+    display: none;
+  }
+
+  .about-text,
+  .education-text,
+  .courses-list,
+  .btn-download {
+    margin-left: 0;
+  }
+
+  .btn-download {
+    padding: 14px 32px;
+    font-size: 1rem;
+  }
+}
+
+/* Mobile pequeno */
+@media (max-width: 480px) {
+  .portfolio,
+  .about,
+  .education,
+  .courses,
+  .download-section {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+/* Desktop Styles para o Curriculo (a partir de 768px) */
+@media (min-width: 768px) {
+  .curriculo-grid {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    gap: 2rem;
+    padding-top: 60px;
+  }
+
+  .curriculo-title {
+    display: block;
+    padding-left: 30px;
+  }
+
+  .curriculo-title h1 {
+    font-size: 10rem;
+    font-weight: 900;
+    line-height: 0.85;
+    color: #0a0a0a;
+    margin: 0;
+    letter-spacing: -2px;
+  }
 }

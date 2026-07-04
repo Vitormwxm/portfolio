@@ -167,9 +167,9 @@
   }
   
   .menu-list li a:hover {
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
-    transform: translateX(4px);
+    background-color: transparent;
+    color: #2877ab;
+    transform: none;
   }
 
   .menu-list li a:hover::after {
