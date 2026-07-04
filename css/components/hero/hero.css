@@ -258,6 +258,7 @@ body {
     font-weight: bold;
     color: #ffffff;            
     letter-spacing: 1px;       
+    white-space: nowrap;
 }
 
 .footer-content .java-logo {
